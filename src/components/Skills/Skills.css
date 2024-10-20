@@ -1,0 +1,42 @@
+/* src/components/Skills/Skills.css */
+
+.skills {
+    padding: 4rem 2rem; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Tamaño del encabezado */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column; /* Coloca las habilidades en columnas */
+    align-items: center; /* Centrar las habilidades */
+  }
+  
+  .skill {
+    width: 80%; /* Ancho del contenedor de la habilidad */
+    margin: 1rem 0; /* Espaciado superior e inferior */
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+  
+  .skill-name {
+    font-weight: bold; /* Negrita para el nombre de la habilidad */
+  }
+  
+  .skill-level {
+    background-color: #e0e0e0; /* Fondo de la barra de habilidad */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+  }
+  
+  .skill-bar {
+    height: 10px; /* Altura de la barra de habilidad */
+    background-color: #333; /* Color de la barra de habilidad */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  

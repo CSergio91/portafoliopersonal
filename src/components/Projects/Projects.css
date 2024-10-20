@@ -1,0 +1,45 @@
+/* src/styles.css */
+.projects {
+    padding: 20px;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.333% - 20px); /* Tres tarjetas por fila */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    margin: 12px 0 8px;
+  }
+  
+  .project-description {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+  
+  .project-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  background-color: black;
+}
+
+
+/* src/App.css */
+.app {
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.app.light {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Texto negro */
+}
+
+.app.dark {
+  background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+}

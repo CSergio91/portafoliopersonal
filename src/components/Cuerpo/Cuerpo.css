@@ -1,0 +1,23 @@
+/* src/components/About/About.css */
+
+.about {
+    padding: 4rem 2rem; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Tamaño del encabezado */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+  }
+  
+  p {
+    font-size: 1.1rem; /* Tamaño del texto */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    max-width: 800px; /* Limitar el ancho del texto para mejor legibilidad */
+    margin-left: auto; /* Centrar el texto */
+    margin-right: auto; /* Centrar el texto */
+  }
+  

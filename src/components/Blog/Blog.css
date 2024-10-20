@@ -1,0 +1,149 @@
+/* src/components/Blog.css */
+.blog {
+    padding: 40px;
+    background-color: #121212; /* Color de fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    color: white; /* Color de texto blanco */
+  }
+  
+  .blog h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 30px; /* Margen inferior */
+    font-size: 2em; /* Tamaño de fuente más grande */
+  }
+  
+  .blog-posts {
+    display: flex;
+    flex-direction: column; /* Colocar en columna */
+    gap: 20px; /* Espaciado entre tarjetas */
+  }
+  
+  .blog-card {
+    background-color: #1e1e1e; /* Color de fondo para la tarjeta */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: transform 0.2s; /* Efecto de transición al pasar el ratón */
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px); /* Elevar la tarjeta al pasar el ratón */
+  }
+  
+  .blog-card h3 {
+    margin: 0 0 10px 0; /* Margen inferior */
+    font-size: 1.5em; /* Tamaño de fuente */
+    color: #bb86fc; /* Color para el título */
+  }
+  
+  .read-more {
+    background-color: #03dac6; /* Color del botón */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  .read-more:hover {
+    background-color: #00bfae; /* Color del botón al pasar el ratón */
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Mantener el modal por encima de otros elementos */
+  }
+  
+  .modal-content {
+    background-color: #1e1e1e; /* Color de fondo del modal */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    color: white; /* Texto blanco */
+    width: 90%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
+  }
+  
+  .close-button {
+    background-color: #f44336; /* Color del botón de cerrar */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer;
+    margin-top: 10px; /* Margen superior */
+  }
+  
+  .comment-section {
+    margin-top: 20px;
+    background-color: #292929; /* Color de fondo para la sección de comentarios */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .comment-section h4 {
+    margin-bottom: 10px; /* Margen inferior */
+  }
+  
+  .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Margen inferior */
+  }
+  
+  .comment-section input {
+    margin-bottom: 10px; /* Margen inferior */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #444; /* Borde suave oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #1e1e1e; /* Fondo oscuro para el input */
+    color: white; /* Texto blanco */
+  }
+  
+  .comment-section textarea {
+    margin-bottom: 10px; /* Margen inferior */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #444; /* Borde suave oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #1e1e1e; /* Fondo oscuro para el textarea */
+    color: white; /* Texto blanco */
+  }
+  
+  .comment-section button {
+    background-color: #03dac6; /* Color del botón */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  .comment-section button:hover {
+    background-color: #00bfae; /* Color del botón al pasar el ratón */
+  }
+  
+  .comments {
+    margin-top: 10px; /* Margen superior */
+  }
+  
+  .comments .comment {
+    background-color: #333; /* Fondo gris oscuro para cada comentario */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 5px; /* Margen inferior entre comentarios */
+  }
+  
+  .comments p {
+    margin: 0; /* Sin margen en el párrafo */
+  }
+  
