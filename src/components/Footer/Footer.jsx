@@ -1,9 +1,12 @@
 // src/components/Footer.js
 import React from 'react';
+
 import './Footer.css';
 
 const Footer = () => {
   return (
+    <div className="contaeinerfooter" id='contact'> 
+      <div className="sectionfooter">
     <footer className="footer">
       <div className="footer-content">
         <p>© {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.</p>
@@ -14,6 +17,13 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </div>
+    
+    
+      
+    
+    </div>
+    
   );
 };
 

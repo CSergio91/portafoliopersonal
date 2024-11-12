@@ -82,7 +82,7 @@ const Modal = ({ post, onClose, onAddComment }) => {
   };
 
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay" id='blog'>
       <div className="modal-content">
         <h3>{post.title}</h3>
         <p>{post.content}</p>

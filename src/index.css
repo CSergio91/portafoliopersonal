@@ -11,6 +11,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary: #cdd7df;
+  --secondary: #81868b;
+  --hover: #c3c8cc;
+  --text: #9c9ca3;
+  --textdark:#222;
+  --background: #4e4848;
+  --font:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --degradate: linear-gradient(to right, rgb(17, 16, 17), rgb(95, 55, 95), rgb(63, 37, 63));
+  --degradate2:linear-gradient(to right, rgb(24, 23, 24), rgb(46, 34, 46), rgb(59, 39, 59), rgb(134, 73, 129));
+--hoverdegradate:linear-gradient(to right, rgb(134, 73, 129), rgb(59, 39, 59),rgb(46, 34, 46), rgb(24, 23, 24));
 }
 
 html{

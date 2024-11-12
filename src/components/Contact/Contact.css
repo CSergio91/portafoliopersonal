@@ -7,6 +7,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
     overflow: hidden; /* Ocultar contenido que sobresalga */
     margin: 20px 0; /* Espaciado arriba y abajo */
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
   }
   
   .contact::before {
@@ -24,7 +27,7 @@
   .contact h2 {
     margin-bottom: 20px;
     font-size: 2em; /* Tamaño de fuente más grande */
-    color: white; /* Color del texto */
+    color: var(--primary); /* Color del texto */
     position: relative; /* Posicionamiento relativo para el texto */
     z-index: 2; /* Mantener el texto sobre el fondo inclinado */
   }
@@ -41,7 +44,7 @@
   .contact label {
     margin-bottom: 5px;
     font-weight: bold; /* Texto en negrita para etiquetas */
-    color: white; /* Color de texto */
+    color: var(--secondary); /* Color de texto */
   }
   
   .contact input,
@@ -58,8 +61,8 @@
   }
   
   .contact button {
-    background-color: #007bff; /* Color del botón */
-    color: white; /* Color del texto */
+    background-color: var(--background); /* Color del botón */
+    color: var(--secondary); /* Color del texto */
     padding: 12px; /* Espaciado interno */
     border: none;
     border-radius: 5px; /* Bordes redondeados */
@@ -68,6 +71,7 @@
   }
   
   .contact button:hover {
-    background-color: #0056b3; /* Color del botón al pasar el ratón */
+    background-color: var(--hover); /* Color del botón al pasar el ratón */
+  color: var(--text);
   }
   

@@ -2,14 +2,16 @@
 
 .skills {
     padding: 4rem 2rem; /* Espaciado interno */
-    background-color: #ffffff; /* Color de fondo */
+    background:var(--degradate2); /* Color de fondo */
     color: #333; /* Color del texto */
     text-align: center; /* Centrar el texto */
+    height: 100vh;
   }
   
   h2 {
-    font-size: 2rem; /* Tamaño del encabezado */
+    font-size: 2.5rem; /* Tamaño del encabezado */
     margin-bottom: 1.5rem; /* Espaciado inferior */
+    color: var(--secondary);
   }
   
   .skills-list {
@@ -19,24 +21,40 @@
   }
   
   .skill {
-    width: 80%; /* Ancho del contenedor de la habilidad */
+    width: 70%; /* Ancho del contenedor de la habilidad */
     margin: 1rem 0; /* Espaciado superior e inferior */
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+
+  .skill img{
+    width: 70px; /* Ancho del contenedor de la habilidad */
+    position: absolute;
+     /* Espaciado superior e inferior */
     text-align: left; /* Alinear el texto a la izquierda */
   }
   
   .skill-name {
     font-weight: bold; /* Negrita para el nombre de la habilidad */
+    color: var(--text);
+    font-size: 1.2rem;
   }
   
   .skill-level {
-    background-color: #e0e0e0; /* Fondo de la barra de habilidad */
+    background: var(--degradate); /* Fondo de la barra de habilidad */
     border-radius: 5px; /* Bordes redondeados */
     overflow: hidden; /* Oculta el contenido que se desborda */
+    width: 100%;
   }
   
   .skill-bar {
-    height: 10px; /* Altura de la barra de habilidad */
-    background-color: #333; /* Color de la barra de habilidad */
+    height: 50px; /* Altura de la barra de habilidad */
+    background-color: var(--hover); /* Color de la barra de habilidad */
     border-radius: 5px; /* Bordes redondeados */
+    
+  }
+
+  @keyframes skillsanim {
+    from 0%{width: 0;}
+    to 100%{width: 100px;}
   }
   

@@ -1,6 +1,11 @@
 /* src/styles.css */
 .projects {
     padding: 20px;
+    background: var(--degradate2);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
   }
   
   .projects-list {

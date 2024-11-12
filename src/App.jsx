@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Blog from "./components/Blog/Blog.jsx";
+import Feedback from "./components/Feedback/Feedback.jsx";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false); // Estado para el modo oscuro
@@ -22,9 +23,8 @@ const App = () => {
       <Cuerpo />
       <Skills />
       <Projects />
-      <Contact />
       <Footer />
-      <Blog />
+     
     </div>
   );
 };

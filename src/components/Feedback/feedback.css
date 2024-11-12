@@ -1,0 +1,5 @@
+feedback_container{
+    background-color: var(--background);
+    height: 200px;
+    width: 100%;
+}

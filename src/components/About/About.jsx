@@ -1,23 +1,41 @@
 // src/components/Hero/Hero.js
 
-import React from 'react';
-import './About.css';
+import React from "react";
+import "./About.css";
+import selfie from "../images/selfie.jpg";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import descargarCV from "../images/descarga.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <h1>Hola, soy [Tu Nombre]</h1>
-      <p>
-        Soy un desarrollador web con experiencia en la creación de aplicaciones
-        modernas y responsivas. Me especializo en tecnologías como React y
-        tengo un sólido conocimiento en HTML, CSS y JavaScript. Mi enfoque es
-        crear soluciones que no solo sean funcionales, sino que también
-        ofrezcan una experiencia de usuario excepcional.
-      </p>
-      <a href="#projects" className="cta-button">Ver Proyectos</a>
-    </section>
+    <div className="home_container">
+        <section className="hero">
+          <div className="section_container">
+            <img src={selfie} alt=""/>
+            </div>
+           
+        <div className="section_container">
+          <h1>Hola, soy Carlos Sergio Martinez Vergel</h1>
+          <h2>Junior - Desarrollador Web</h2>
+          <div className="content_redes">
+          <div className="redes_icons"><a href="#projects">
+            <img src={github} alt="" className="icons"/>
+            
+          </a></div>
+          <div className="redes_icons"><a href="#projects" >
+          <img src={linkedin} alt="" />
+          
+          </a></div>
+          <div className="redes_icons"><a href="#projects" >
+          <img src={descargarCV} alt="" />
+          </a></div>
+          </div>
+          </div>
+        </section>
+      </div>
+   
   );
 };
 
 export default Hero;
-

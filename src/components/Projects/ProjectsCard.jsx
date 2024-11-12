@@ -2,7 +2,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-const ProjectCard = ({ title, description, image, link }) => {
+const ProjectCard = ({ title, description, image, imageskill, link }) => {
   return (
     <div className="project-card">
       <img src={image} alt={title} className="project-image" />
@@ -11,6 +11,9 @@ const ProjectCard = ({ title, description, image, link }) => {
       <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
         Ver Proyecto
       </a>
+      <div className="imageskill">
+        <img src="" alt="" />
+      </div>
     </div>
   );
 };

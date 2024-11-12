@@ -2,22 +2,161 @@
 
 .about {
     padding: 4rem 2rem; /* Espaciado interno */
-    background-color: #ffffff; /* Color de fondo */
+    background:var(--degradate2); /* Color de fondo */
     color: #333; /* Color del texto */
     text-align: center; /* Centrar el texto */
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .about .content_about{
+    width: 100%;
+    text-align: center;
   }
   
-  h2 {
-    font-size: 2rem; /* Tamaño del encabezado */
+  h1 {
+    font-size: 2.5rem; /* Tamaño del encabezado */
     margin-bottom: 1.5rem; /* Espaciado inferior */
+  color: var(--primary);
+  
   }
   
   p {
-    font-size: 1.1rem; /* Tamaño del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
     margin-bottom: 1.5rem; /* Espaciado inferior */
     line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
     max-width: 800px; /* Limitar el ancho del texto para mejor legibilidad */
     margin-left: auto; /* Centrar el texto */
     margin-right: auto; /* Centrar el texto */
+  color: var(--text);
+  text-align: justify;
   }
+
+  /*css de experiencia
+  
+     <div className='card_experiencia'>
+      <div className="exp_title">
+        <h1 className="title">{title}</h1>
+      </div>
+      <div className="exp_fecha"><p>{fecha}</p></div>
+      <div className="exp_descript"><p>{exp_description}</p></div>
+    </div>
+    
+    */
+
+  .space{
+    height: 5vh;
+  }
+
+.experiencia{
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+}
+
+  .card_experiencia{
+    border: 1px solid white;
+    border-radius: 15px 25px 60px 15px;
+    height:30vh;
+    display: block;
+    background:var(--degradate2);
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    width: 15vw;
+  }
+
+  .card_experiencia .exp_title{
+    padding: .5em;
+    margin:.5em;
+  }
+
+  .card_experiencia .exp_fecha{
+    display: flex;
+  }
+
+  .card_experiencia .exp_fecha p{
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .card_experiencia .exp_title h1{
+    margin: 0 1em 1em 1em;
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-family: monospace;
+  }
+
+  .card_experiencia .exp_descript{
+    width: 100%;
+  }
+
+  .card_experiencia .exp_descript p{
+    margin: .5em;
+    color: var(--primary);
+    margin-bottom: 2em;
+    height: 25vh;
+    
+    transition: 1.5s ease-in-out;
+    font-family: monospace;
+    font-size: 1rem;
+    
+  }
+
+  .card_experiencia:hover .exp_descript p{
+   
+    height: 50vh;
+  }
+
+  .card_experiencia:hover {
+    width:30vw;
+    height: auto;
+    cursor: pointer;
+    box-shadow: -5px 5px 10px rgba(230, 226, 231, 0.5);;
+  }
+
+  .card_experiencia .ver_mas button{
+    background: var(--degradate2);
+    padding: 1em;
+    width: 30%;
+    border-radius: 15px;
+    color: var(--text);
+    animation: 1s ease;
+  }
+
+
+  @media (max-width: 900px) {
+    .card_experiencia{
+    display: block;
+    width: 100%;
+    margin-top: -100px;
+    height: 13vh;
+    
+   }
+   .card_experiencia:hover{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 100px;
+    
+    z-index: 100;
+   }
+  }
+
+  @media (max-width: 640px) {
+    .card_experiencia{
+    display: block;
+    width: 100%;
+   }
+   .card_experiencia:hover{
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+  }
+
   

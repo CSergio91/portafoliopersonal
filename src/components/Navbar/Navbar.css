@@ -5,15 +5,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-  position: fixed;
-  width: 100%;
+  background-color: var(--background); /* Fondo semitransparente */
+  position: sticky;
+  top:5px;
+  width: auto;
   z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
   transition: background-color 0.3s; /* Transición suave para fondo */
 }
 
 .navbar.light {
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo claro semitransparente */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo claro semitransparente */
   color: rgb(90, 84, 84); /* Texto negro */
 }
 
@@ -23,15 +24,25 @@
   margin-left: 20px; /* Margen a la izquierda */
 }
   
+nav .logo h1{
+  background: var(--degradate);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
   .logo {
     font-size: 1.5em;
-    color: white;
+    color: var(--text);
     display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
   }
   
   .profile-pic {
-    width: 70px; /* Ajusta el tamaño según lo necesites */
-    height: 70px; /* Ajusta el tamaño según lo necesites */
+    width: 80px; /* Ajusta el tamaño según lo necesites */
+    height: 80px; /* Ajusta el tamaño según lo necesites */
     border-radius: 50%; /* Hacer la imagen circular */
     margin-right: 1rem; /* Espaciado entre la imagen y el texto */
   }
@@ -42,13 +53,14 @@
   }
   
   .name {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
+    font-family: monospace;
   }
   
   .profession {
     font-size: 0.9rem; /* Tamaño de la profesión */
-    color: #ccc; /* Color más claro para la profesión */
+    color: var(--text); /* Color más claro para la profesión */
   }
   
   .nav-links {
@@ -61,13 +73,13 @@
   }
   
   .nav-links li a {
-    color: white;
+    color: var(--primary);
     text-decoration: none;
     transition: 0.5s ease;
   }
   
   .nav-links li a:hover {
-    color:rgb(229, 224, 233);
+    color:var(--hover);
     font-size: 1.3rem;
   }
 
@@ -80,10 +92,23 @@
   .bar {
     height: 3px; /* Altura de las barras del menú */
     width: 25px; /* Ancho de las barras del menú */
-    background-color: white; /* Color de las barras */
+    background-color: var(--secondary); /* Color de las barras */
     margin: 4px 0; /* Espaciado entre barras */
     transition: 0.3s; /* Transición suave */
   }
+
+  /*<nav className={`navbar ${isDarkMode ? 'dark' : 'light'}`}>
+      <div className="logo"></div>
+      <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+        <div className="logo">
+       <h1> Life-Folio</h1>
+      </div>*/
+
+  
   
   /* Estilos para el menú de hamburguesa */
   @media (max-width: 768px) {

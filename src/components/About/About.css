@@ -1,35 +1,130 @@
-/* src/components/Hero/Hero.css */
-
-.hero {
+.home_container {
+    background: var(--degradate2);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 100vh;
+       overflow: hidden;
+}
+
+.home_container .hero {
+  display: flex;
+  justify-content:center;
+  width: 100vw;
+  align-items: center;
+  gap:1px;
+}
+
+.home_container .hero .section_container {
+ display: block;
+ padding: 1em;
+ line-height: 1;
+}
+
+.home_container .hero .section_container img {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  transition: .5s ease;
+}
+
+.home_container .hero .section_container .content_redes {
+  display: flex;
+  width: 40%;
+  justify-content:center;
+  text-align: center;
+  align-content: center;
+  gap: 40px;
+}
+
+.home_container .hero .section_container .content_redes .redes_icons img {
+  width: 4em;
+  height: 4em;
+}
+
+.home_container .hero .section_container .content_redes .redes_icons img:hover {
+  transform: scale(1.5);
+}
+
+.home_container .hero .section_container h1 {
+  font-size: 3.5rem; /* Tamaño del encabezado */
+   /* Espaciado inferior */
+  background: var(--degradate); /* Color del texto del encabezado */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font);
+  overflow: hidden;
+  animation: text_write 5s steps(40, end) infinite;
+  border-right: 2px solid black;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 3rem; /* Tamaño del encabezado */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  background: var(--degradate); /* Color del texto del encabezado */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font);
+  animation: fast 0.2s linear;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 9rem; /* Tamaño del texto de la descripción */
+  margin-bottom: 2rem; /* Espaciado inferior */
+  color: var(--secondary); /* Color del texto de la descripción */
+  max-width: 600px; /* Limita el ancho del texto para mejor legibilidad */
+  font-family: var(--font);
+}
+
+.cta-button {
+  background-color: var(--background); /* Color de fondo del botón */
+  color: var(--hover); /* Color del texto del botón */
+  padding: 0.8rem 1.5rem; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+}
+
+@media (max-width: 640px) {
+  .home_container {
+    display: block;
+    line-height: 1;
+    width: 100%;
+    
+  }
+  .home_container .hero {
+    display: block;
+    justify-content:center;
+    width: 100%;
     align-items: center;
-    height: 100vh; /* Altura completa de la ventana */
-    background-color: #f5f5f5; /* Color de fondo */
     text-align: center;
-    padding: 2rem;
+    gap:1px;
   }
-  
-  h1 {
-    font-size: 2.5rem; /* Tamaño del encabezado */
-    margin-bottom: 1rem; /* Espaciado inferior */
-    color: #333; /* Color del texto del encabezado */
+
+  .home_container .hero .section_container .content_redes .redes_icons{
+    display: flex;
+    width: 100%;
   }
-  
-  p {
-    font-size: 1.2rem; /* Tamaño del texto de la descripción */
-    margin-bottom: 2rem; /* Espaciado inferior */
-    color: #666; /* Color del texto de la descripción */
-    max-width: 600px; /* Limita el ancho del texto para mejor legibilidad */
+
+}
+
+@media (max-width: 900px) {
+  .home_container {
+    display: block;
+    line-height: 1;
+    justify-content: center;
+    text-align: center;
   }
-  
-  .cta-button {
-    background-color: #333; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 0.8rem 1.5rem; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    transition: background-co
-  
+
+  .home_container .hero {
+    display: block;
+    justify-content:center;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    gap:1px;
+}
+
+}
+
+
