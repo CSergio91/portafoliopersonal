@@ -11,9 +11,9 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
   };
 
   return (
-    <nav className={`navbar ${isDarkMode ? 'dark' : 'light'}`}>
+    <nav id='navigate'  className={`navbar ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="logo">
-      <img src={logo} alt="A tu Estilo" className="logo" />
+      <img src={logo} alt="A tu Estilo" className="profile-pic" />
       <h1> Life-Folio</h1>
       </div>
       <div className="logo"></div>
@@ -27,11 +27,10 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
        
       </div>
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">Sobre mí</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#arriba">Contacto</a></li>
       </ul>
       <div className="theme-toggle" onClick={toggleTheme}>
         {isDarkMode ? '🌙' : '☀️'} {/* Icono para alternar el tema */}

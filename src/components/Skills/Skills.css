@@ -1,60 +1,96 @@
 /* src/components/Skills/Skills.css */
 
 .skills {
-    padding: 4rem 2rem; /* Espaciado interno */
-    background:var(--degradate2); /* Color de fondo */
-    color: #333; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    height: 100vh;
-  }
-  
-  h2 {
-    font-size: 2.5rem; /* Tamaño del encabezado */
-    margin-bottom: 1.5rem; /* Espaciado inferior */
-    color: var(--secondary);
-  }
-  
-  .skills-list {
-    display: flex;
-    flex-direction: column; /* Coloca las habilidades en columnas */
-    align-items: center; /* Centrar las habilidades */
-  }
-  
-  .skill {
-    width: 70%; /* Ancho del contenedor de la habilidad */
-    margin: 1rem 0; /* Espaciado superior e inferior */
-    text-align: left; /* Alinear el texto a la izquierda */
-  }
+  /* Espaciado interno */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  .skill img{
-    width: 70px; /* Ancho del contenedor de la habilidad */
-    position: absolute;
-     /* Espaciado superior e inferior */
-    text-align: left; /* Alinear el texto a la izquierda */
-  }
-  
-  .skill-name {
-    font-weight: bold; /* Negrita para el nombre de la habilidad */
-    color: var(--text);
-    font-size: 1.2rem;
-  }
-  
-  .skill-level {
-    background: var(--degradate); /* Fondo de la barra de habilidad */
-    border-radius: 5px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    width: 100%;
-  }
-  
-  .skill-bar {
-    height: 50px; /* Altura de la barra de habilidad */
-    background-color: var(--hover); /* Color de la barra de habilidad */
-    border-radius: 5px; /* Bordes redondeados */
-    
-  }
+h1 {
+  font-size: 2.5rem; /* Tamaño del encabezado */
+  margin-bottom: 1.5rem; /* Espaciado inferior */
+  font-family: var(--font1);
+  color: var(--text);
+  animation: skillsanim 2s linear;
+}
 
-  @keyframes skillsanim {
-    from 0%{width: 0;}
-    to 100%{width: 100px;}
-  }
+.skills-list {
+  display: flex;
+  opacity: .6;
+  justify-content: space-between;
+  width: 60vw;
+  align-items: center;
+  gap: 2px;
+  border: 1px var(--text);
+  padding: 2em;
   
+  border-radius: 20px 40px 60px;
+  box-shadow: inset 2px 2px 2px rgba(223, 174, 219, .6);
+  gap:20px;
+  animation: text_write .2s;
+  transition: 1s ease-in-out;
+}
+
+.skills-list:hover {
+opacity: 1;
+  cursor: pointer;
+  box-shadow: inset 30px 10px 20px rgb(226, 38, 195);
+}
+
+.skill {
+   /* Ancho del contenedor de la habilidad */
+  margin: 1rem 0; /* Espaciado superior e inferior */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 15px;
+  width: 60vw;
+  height: auto;
+}
+
+
+
+.skill img {
+  width: 70px; /* Ancho del contenedor de la habilidad */
+  position: absolute;
+  /* Espaciado superior e inferior */
+   /* Alinear el texto a la izquierda */
+  transition: .3s ease-in-out;
+}
+
+.skill img:hover {
+  scale: 1.5;
+}
+
+.skill-name {
+  font-weight: bold; /* Negrita para el nombre de la habilidad */
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.skill-level {
+  background: var(--degradate2); /* Fondo de la barra de habilidad */
+  border-radius: 5px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  width: 100%;
+}
+
+.skill-bar {
+  height: 50px; /* Altura de la barra de habilidad */
+  background-color: var(--hover); /* Color de la barra de habilidad */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+@keyframes skillsanim {
+  from 0% {
+    width: 0;
+  }
+  to 100% {
+    width: 100px;
+  }
+}

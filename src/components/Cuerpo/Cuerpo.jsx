@@ -7,8 +7,9 @@ import Experincia from './Experincia';
 const About = () => {
   return (
     <section id="about" className="about">
+       <h1>Sobre Mí</h1>
       <div className="content_about">
-      <h1>Sobre Mí</h1>
+     
       <p>
         Soy un desarrollador web con un enfoque en la creación de experiencias
         digitales efectivas y atractivas. Con experiencia en [tecnologías que dominas],

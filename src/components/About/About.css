@@ -1,88 +1,83 @@
 .home_container {
-    background: var(--degradate2);
-    display: flex;
-    height: 100vh;
-       overflow: hidden;
-}
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin-top: 50px;
+  transition: 1s ease-in-out;
+  }
 
 .home_container .hero {
   display: flex;
-  justify-content:center;
-  width: 100vw;
+  opacity: .8;
+  justify-content: center;
+  width: 60vw;
   align-items: center;
-  gap:1px;
+  gap: 2px;
+  border: 1px var(--text);
+  padding: 2em;
+  
+  border-radius: 20px 40px 60px;
+  box-shadow: inset 2px 2px 2px rgba(223, 174, 219, .6);
+  gap:5px;
+  animation: text_write .2s;
+  transition: 1s ease-in-out;
+}
+
+.home_container .hero:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: inset 30px 10px 20px rgb(226, 38, 195);
 }
 
 .home_container .hero .section_container {
- display: block;
- padding: 1em;
- line-height: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin:-1em 5em 0 1em ;
 }
 
-.home_container .hero .section_container img {
-  width: 20em;
-  height: 20em;
-  border-radius: 50%;
-  transition: .5s ease;
-}
-
-.home_container .hero .section_container .content_redes {
+.home_container .hero .section_container .categ_container {
   display: flex;
-  width: 40%;
-  justify-content:center;
-  text-align: center;
-  align-content: center;
-  gap: 40px;
+  gap: 20px;
+  align-items: center;
 }
 
-.home_container .hero .section_container .content_redes .redes_icons img {
-  width: 4em;
-  height: 4em;
-}
-
-.home_container .hero .section_container .content_redes .redes_icons img:hover {
-  transform: scale(1.5);
+.home_container .hero .section_container .logoimg {
+  width: 10em;
+  height: 10em;
+  border-radius:50%;
+  transition: 0.5s ease;
+  animation: shadowmov 5s infinite forwards;
+  margin-bottom: 2em;
+  align-items: center;
 }
 
 .home_container .hero .section_container h1 {
-  font-size: 3.5rem; /* Tamaño del encabezado */
-   /* Espaciado inferior */
-  background: var(--degradate); /* Color del texto del encabezado */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: var(--font);
+  font-size: 1.8rem; /* Tamaño del encabezado */
+  /* Espaciado inferior */
+width: 25vw;
+  font-family: var(--font1);
   overflow: hidden;
-  animation: text_write 5s steps(40, end) infinite;
-  border-right: 2px solid black;
+  animation: text_write 5s steps(40, end) ;
+  border-right: 10px solid rgb(41, 18, 48);
   white-space: nowrap;
+  line-height: 1;
+  color: var(--text);
 }
 
-h2 {
-  font-size: 3rem; /* Tamaño del encabezado */
-  margin-bottom: 1rem; /* Espaciado inferior */
-  background: var(--degradate); /* Color del texto del encabezado */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: var(--font);
-  animation: fast 0.2s linear;
-  white-space: nowrap;
+.home_container .hero .section_container .cont-redes {
+  display: flex;
+  gap: 10px;
 }
+
+
 
 p {
-  font-size: 9rem; /* Tamaño del texto de la descripción */
-  margin-bottom: 2rem; /* Espaciado inferior */
+  font-size: 1.5rem; /* Tamaño del texto de la descripción */
+  margin: 2rem; /* Espaciado inferior */
   color: var(--secondary); /* Color del texto de la descripción */
-  max-width: 600px; /* Limita el ancho del texto para mejor legibilidad */
-  font-family: var(--font);
-}
-
-.cta-button {
-  background-color: var(--background); /* Color de fondo del botón */
-  color: var(--hover); /* Color del texto del botón */
-  padding: 0.8rem 1.5rem; /* Espaciado interno del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes redondeados */
-  text-decoration: none; /* Sin subrayado */
+  max-width: 400px; /* Limita el ancho del texto para mejor legibilidad */
+  font-family: var(--font1);
 }
 
 @media (max-width: 640px) {
@@ -90,22 +85,20 @@ p {
     display: block;
     line-height: 1;
     width: 100%;
-    
   }
   .home_container .hero {
     display: block;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     align-items: center;
     text-align: center;
-    gap:1px;
+    gap: 1px;
   }
 
-  .home_container .hero .section_container .content_redes .redes_icons{
+  .home_container .hero .section_container .content_redes .redes_icons {
     display: flex;
     width: 100%;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -118,13 +111,50 @@ p {
 
   .home_container .hero {
     display: block;
-    justify-content:center;
+    justify-content: center;
     width: 100vw;
     align-items: center;
     text-align: center;
-    gap:1px;
+    gap: 1px;
+  }
 }
 
+@keyframes shadowmov {
+  0% {
+    box-shadow: -2px 5px 15px rgba(201, 190, 199, 0.5);
+  }
+  50% {
+    box-shadow: -2px 5px 5px rgba(245, 242, 244, 0.5);
+  }
+  75% {
+    box-shadow: 2px 5px 10px rgba(241, 7, 210, 0.5);
+  }
+  100% {
+    box-shadow: -5px 5px 15px rgba(190, 64, 174, 0.5);
+  }
 }
 
+@keyframes text_write {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
 
+@keyframes fast {
+  0% {
+    opacity: 0;
+    translate: 0px;
+  }
+  25% {
+    translate: 40px;
+  }
+  50% {
+    translate: 80px;
+  }
+  100% {
+    translate: 0px;
+  }
+}

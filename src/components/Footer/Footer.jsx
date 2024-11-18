@@ -1,28 +1,18 @@
 // src/components/Footer.js
 import React from 'react';
+import logo from '../images/Logo.png';
 
 import './Footer.css';
 
+
 const Footer = () => {
   return (
-    <div className="contaeinerfooter" id='contact'> 
-      <div className="sectionfooter">
-    <footer className="footer">
+    <footer id='#contacto' className="footer">
       <div className="footer-content">
-        <p>© {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.</p>
-        <div className="social-links">
-          <a href="https://github.com/tu_usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          {/* Agrega más enlaces a redes sociales según sea necesario */}
+        <p className='copyright'>© {new Date().getFullYear()} <span>Carlos</span> Sergio Martinez Vergel</p>
+        <a href='#arriba'><img width='80px' src={logo} alt="" /></a>
         </div>
-      </div>
     </footer>
-    </div>
-    
-    
-      
-    
-    </div>
     
   );
 };

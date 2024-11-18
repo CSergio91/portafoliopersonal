@@ -20,8 +20,9 @@ const App = () => {
     <div className={isDarkMode ? "app dark" : "app light"}>
       <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <About />
-      <Cuerpo />
       <Skills />
+      <Cuerpo />
+      
       <Projects />
       <Footer />
      

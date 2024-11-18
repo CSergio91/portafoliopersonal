@@ -1,34 +1,27 @@
 /* src/styles.css */
-.footer {
-    background-color: #f8f9fa; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar texto */
-    position: relative; /* Cambiar a 'relative' para que el footer se mantenga en su posición */
-    bottom: 0; /* Alineación en la parte inferior */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
-    box-sizing: border-box; /* Incluye padding en el ancho total */
+footer {
+  position: relative;
+    background-color: var(--background); /* Color de fondo */
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+    overflow: hidden;
   }
   
   .footer-content {
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centrando el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .footer-content .copyright{
+    font-size: 1.3rem;
   }
   
-  .footer p {
-    margin: 0; /* Eliminar márgenes del párrafo */
-  }
   
-  .social-links {
-    margin-top: 10px; /* Margen superior */
-  }
-  
-  .social-links a {
-    margin: 0 10px; /* Espaciado entre enlaces */
-    text-decoration: none; /* Sin subrayado */
-    color: #007bff; /* Color de enlace */
-  }
-  
-  .social-links a:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
-  }
   

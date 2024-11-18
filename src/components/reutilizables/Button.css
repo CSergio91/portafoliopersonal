@@ -1,0 +1,44 @@
+button{
+display: flex;
+justify-content: center;
+width: 180px;
+height: 50px;
+border: 1px solid wheat;
+border-radius: 10px;
+transition: .5s ease-in-out;
+border-style: none;
+background-color: var(--textdark);
+}
+
+.button-container button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+h4{
+    font-size: 1rem;
+    
+}
+
+.button-container button:hover{
+    color:var(--hover);
+    scale: 1.1;
+    cursor: pointer;
+    background-color: var(--background);
+}
+
+button .img-reut{
+    width: 2em;
+    height: 2em;
+}
+
+a{
+text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    }
+
