@@ -80,12 +80,20 @@ p {
   font-family: var(--font1);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+#main_container{
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+}
+
   .home_container {
     display: block;
     line-height: 1;
     width: 100%;
   }
+  
   .home_container .hero {
     display: block;
     justify-content: center;
@@ -95,18 +103,9 @@ p {
     gap: 1px;
   }
 
-  .home_container .hero .section_container .content_redes .redes_icons {
-    display: flex;
-    width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .home_container {
+  .home_container .hero .section_container .cont_redes button{
     display: block;
-    line-height: 1;
-    justify-content: center;
-    text-align: center;
+    width: 100%;
   }
 
   .home_container .hero {
@@ -118,6 +117,73 @@ p {
     gap: 1px;
   }
 }
+
+@media (max-width: 960px) {
+  #main_container{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+    .home_container {
+      display: block;
+      line-height: 1;
+      width: 100%;
+    }
+    
+    .home_container .hero {
+      display: block;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .home_container .hero .section_container .cont_redes button{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    #main_container{
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+      .home_container {
+        display: block;
+        line-height: 1;
+        width: 100%;
+      }
+      
+      .home_container .hero {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 1px;
+      }
+    
+      .home_container .hero .section_container .cont_redes button{
+        display: block;
+        width: 100%;
+      }
+    
+      .home_container .hero {
+        display: block;
+        justify-content: center;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        gap: 1px;
+      }
+    }
+
+ 
+
 
 @keyframes shadowmov {
   0% {

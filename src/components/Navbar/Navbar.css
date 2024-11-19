@@ -110,16 +110,6 @@ nav .logo h1{
     transition: 0.3s; /* Transición suave */
   }
 
-  /*<nav className={`navbar ${isDarkMode ? 'dark' : 'light'}`}>
-      <div className="logo"></div>
-      <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-        <div className="logo">
-       <h1> Life-Folio</h1>
-      </div>*/
 
   
   
@@ -127,7 +117,7 @@ nav .logo h1{
   @media (max-width: 768px) {
     .nav-links {
       position: absolute;
-      top: 60px; /* Alineación con la parte superior del navbar */
+      top: 20px; /* Alineación con la parte superior del navbar */
       right: 0;
       background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
       flex-direction: column; /* Colocar enlaces en columna */

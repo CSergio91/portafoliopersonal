@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Asegúrate de tener un archivo CSS para el Navbar
-import logo from '../images/logo.png';
+import logo from '../images/Logo.png';
 
 
 const Navbar = ({ toggleTheme, isDarkMode }) => {

@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div className={isDarkMode ? "app dark" : "app light"}>
+    <div id='main_container' className={isDarkMode ? "app dark" : "app light"}>
       <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <About />
       <Skills />

@@ -5,7 +5,7 @@ width: 180px;
 height: 50px;
 border: 1px solid wheat;
 border-radius: 10px;
-transition: .5s ease-in-out;
+transition: .2s ease-in-out;
 border-style: none;
 background-color: var(--textdark);
 }
