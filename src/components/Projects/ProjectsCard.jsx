@@ -6,7 +6,7 @@ import github from '../images/github.png';
 import desploy from '../images/despliegue.png';
 
 // eslint-disable-next-line react/prop-types
-const ProjectCard = ({title, description, image, link, tags, tags1, tags2, tags3, tags4, tags5}) => {
+const ProjectCard = ({title, description, image, link, tags, tags1, tags2, tags3}) => {
   return (
     <div className="project-card">
       

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Etiqueta.css'
 
 // eslint-disable-next-line react/prop-types

@@ -1,6 +1,5 @@
 // src/components/Hero/Hero.js
 
-import React from "react";
 import "./About.css";
 import selfie from "../images/selfie.png";
 import github from "../images/github.png";
@@ -11,7 +10,6 @@ import location from "../images/loc1.png";
 import emailsend from "../images/email1.png";
 import copiar from "../images/copy1.png";
 import hola from "../images/hola.png";
-
 import Button from "../reutilizables/Button";
 import { copiarGmail } from "./Copiar.js";
 import Etiqueta from "../reutilizables/Etiqueta.jsx";
