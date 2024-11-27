@@ -121,11 +121,11 @@
 
   /*Animacion*/
   @keyframes desploy{
-    form {margin-top:150px;}
+    from {margin-top:150px;}
     to {margin-top:-150px;}
   }
 
   @keyframes desploy1{
-    form {margin-top:-150px;}
+    from {margin-top:-150px;}
     to {margin-top:150px;}
   }

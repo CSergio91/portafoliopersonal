@@ -25,10 +25,6 @@
 
 html{
   scroll-behavior: smooth;
-animation: backgroundanimation 1s infinite;
 }
 
-@keyframes backgroundanimation {
-  from 0%{background: var(--degradate);}
-  to 100%{background: var(--background);}
-}
+
