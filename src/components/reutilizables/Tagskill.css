@@ -1,0 +1,14 @@
+.tags-container{
+    display: flex;
+}
+
+.tags-container .section-container{
+    display: flex;
+}
+
+.project-tags{
+    border: 1px solid wheat;
+    border-radius: 5px;
+    color:var(--text);
+}
+

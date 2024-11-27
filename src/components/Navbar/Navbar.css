@@ -1,25 +1,24 @@
 /* src/components/Navbar/Navbar.css */
 
 .navbar {
-  position: absolute;
+  position:sticky;
+  top:15px;
+  z-index: 1000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: var(--background); /* Fondo semitransparente */
-  position: sticky;
-  top:15px;
   width: 80%;
-  z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
-  transition: background-color 0.3s infinite; /* Transición suave para fondo */
-  border-radius: 15px;
-  box-shadow: 15px 15px 15px rgba(20, 16, 16, 0.5);
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px rgba(173, 130, 130, 0.5);
 }
 
 .navbar.light {
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo claro semitransparente */
+  background-color: rgb(7, 7, 7); /* Fondo claro semitransparente */
   display: flex;
+  opacity: .9;
 }
 
 .theme-toggle {
@@ -30,19 +29,18 @@
   
 nav .logo h1{
   background: var(--text);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font1);
   animation: shadowmo 5s infinite forwards;
 }
 
 @keyframes shadowmo {
-  0%{text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);}
+  0%, 100%{text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);}
   20%{text-shadow: 5px 6px 15px rgba(153, 23, 170, 0.8);}
   40%{text-shadow: 10px 50px 5px rgba(150, 7, 233, 0.8);}
   80%{text-shadow: 5px 6px 25px rgba(153, 23, 170, 0.8);}
-  100%{text-shadow: 0px 3px 10px rgba(150, 7, 233, 0.8);}
 }
 
   .logo {
@@ -55,16 +53,12 @@ nav .logo h1{
   }
   
   .profile-pic {
-    width: 6em; /* Ajusta el tamaño según lo necesites */
+    width: 4em;
+    height: 3.3em; /* Ajusta el tamaño según lo necesites */
     border-radius: 50%; /* Hacer la imagen circular */
-    margin-right: 1rem; /* Espaciado entre la imagen y el texto */
+    margin-right: 5rem; /* Espaciado entre la imagen y el texto */
   }
-  
-  .name-profession {
-    display: flex;
-    flex-direction: column; /* Coloca el nombre y profesión en columnas */
-  }
-  
+    
   .name {
     font-size: 1.3rem;
     font-weight: bold;

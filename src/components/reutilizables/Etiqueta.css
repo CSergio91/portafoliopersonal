@@ -1,0 +1,49 @@
+.etiqueta-container{
+    display: flex;
+    width: 16em;
+    height: auto;
+    
+    justify-content: start;
+    align-content: start;
+    
+    }
+    
+    .etiqueta-container .etiqueta-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+
+    .etiqueta-container .etiqueta-content .etiq-cont .etiq-logo{
+        width: 2em;
+        height: 2em;
+    }
+    
+    h3{
+        font-size: .9rem;
+    }
+    
+    .button-container button:hover{
+        color:var(--hover);
+        scale: 1.1;
+        cursor: pointer;
+        background-color: var(--background);
+        filter: sepia(0%);
+    }
+    
+    button .img-reut{
+        width: 2em;
+        height: 2em;
+    }
+    
+    a{
+    text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: none;
+        }
+    
+    

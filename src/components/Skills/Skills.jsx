@@ -1,5 +1,6 @@
 // src/components/Skills/Skills.js
 
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Skills.css';
 
@@ -13,25 +14,21 @@ const Skills = () => {
     { src:'src/components/images/materialUI.png', name: 'Material UI'},
     { src:'src/components/images/figma.png', name: 'Figma'},
     { src:'src/components/images/adobe-photoshop.png', name: 'Photoshop'},
-    { src:'src/components/images/github.png', name: 'Git'},
+    { src:'src/components/images/github.png', name: 'GitHub'},
+    { src:'src/components/images/git.png', name: 'Git'}
     // Añade más habilidades según sea necesario
 
     
   ];
   
   return (
-    <section id="" className="skills">
-      <skillsh1>Skills</skillsh1>
+    <section id="skills" className="skills">
+      <h1>Skills</h1>
       <div className="skills-list">
         {skills.map((skill) => (
-          <div className="skill" key={skill.name}>
-           
+          <div className="skillss" key={skill.name}>
             <span className="skill-name">{skill.name}</span>
-            <div className="skill-level">
             <img src={skill.src} alt="" className="skill-img" />
-              
-            
-            </div>
           </div>
         ))}
       </div>

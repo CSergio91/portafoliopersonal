@@ -3,6 +3,7 @@ import './Navbar.css'; // Asegúrate de tener un archivo CSS para el Navbar
 import logo from '../images/Logo.png';
 
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ toggleTheme, isDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el menú
 

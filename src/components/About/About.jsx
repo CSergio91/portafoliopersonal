@@ -5,44 +5,102 @@ import "./About.css";
 import selfie from "../images/selfie.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
-import descargarCV from "../images/descarga.png";
+import descargarCV from "../images/descargar1.png";
 import junior from "../images/junior.png";
-import location from "../images/loc.png";
+import location from "../images/loc1.png";
+import emailsend from "../images/email1.png";
+import copiar from "../images/copy1.png";
+import hola from "../images/hola.png";
+
 import Button from "../reutilizables/Button";
+import { copiarGmail } from "./Copiar.js";
+import Etiqueta from "../reutilizables/Etiqueta.jsx";
 
 const Hero = () => {
+  const linkedinurl =
+    "https://www.linkedin.com/in/carlos-sergio-martinez-vergel";
+  const githuburl = "https://github.com/CSergio91";
+  const email = "servtecempmant@gmail.com";
 
-  const linkedinurl='https://www.linkedin.com/in/carlos-sergio-martinez-vergel';
-  const githuburl='https://github.com/CSergio91';
+  const Copiar = () => {
+    copiarGmail(email);
+  };
 
   return (
     <div id="arriba" className="home_container">
-        <section className="hero">
-          <div className="section_container">
-            <img src={selfie} alt="" className="logoimg"/>
-            <div className="categ_container">
-            <img width='40px' height='40px' src={junior} alt="" className="deslogo" /><h3>JUNIOR - Desarrollador  <span> Frontend</span></h3>
-            </div>
-            
-            <div className="categ_container">
-            <img width='40px' height='40px' src={location} alt="" className="deslogo" /><h3>Valencia, España<span></span></h3>
-            </div>
-           </div>
+      <section className="hero">
         <div className="section_container">
-          <h1>!Hol@, soy <strong>Carlos Sergio..</strong></h1>
-          <p>Apasionado por la tecnología. He descubierto el maravilloso mundo del deiseño Web. Me especializo en la creacion de paginas Web responsive y dinámicas. Busco siempre reencontrarme con implementaciones novedosas.
-            Me encanta ir más allá. 
-            Puedo ser tu mejor compañero de equipo. 
-          </p>
-         <div className="cont-redes">
-          <Button src={descargarCV} label='Descargar CV'/>
-          <Button href={githuburl} src={github} label='GitHub'/>
-          <Button href={linkedinurl} src={linkedin} label='Linkedin'/>
-         </div>
+          <div className="profile">
+            <img src={selfie} alt="" className="logoimg" />
+            <div className="int-profile">
+              <Etiqueta
+                alt="Desarrollador Web -Frontend-"
+                src={junior}
+                label="» Desarrollador Web FrontEND » Especialista en Hardware »Diseñador UI/UX"
+              />
+              <Etiqueta
+                alt="Valencia, España"
+                src={location}
+                label="» Valencia, España"
+              />
+              <div className="email1">
+                <Etiqueta
+                  alt="Valencia, España"
+                  src={emailsend}
+                  label={email}
+                />
+                <img
+                  title="Copiar correo"
+                  onClick={Copiar}
+                  width="20px"
+                  height="20px"
+                  src={copiar}
+                  alt="Copiar correo"
+                  className="copiarimg"
+                />
+              </div>
+            </div>
           </div>
-        </section>
-      </div>
-   
+        </div>
+        <div className="line"></div>
+        <div className="section_container">
+          <h1>
+            !Hol@{" "}
+            <img
+              width="40px"
+              src={hola}
+              alt="Copiar correo"
+              className="copiarimg"
+            />
+            , soy <strong>Carlos Sergio..</strong>
+          </h1>
+          <p className="descript">
+            Soy un <strong>desarrollador web</strong>
+            apasionado por crear experiencias digitales innovadoras. Me
+            especializo en el diseño de páginas web <strong>
+              responsive
+            </strong>{" "}
+            y <strong>dinámicas</strong>. Busco constantemente nuevas
+            oportunidades para aplicar mis conocimientos en proyectos
+            desafiantes. Si quisieras contactarme para colaborar conmigo
+            escribeme a <strong>servtecempmant@gmail.com</strong>
+            <img
+              title="Copiar correo"
+              onClick={Copiar}
+              width="30px"
+              src={copiar}
+              alt="Copiar correo"
+              className="copiarimg"
+            />
+          </p>
+          <div className="cont-redes">
+            <Button src={descargarCV} label="Descargar CV" />
+            <Button href={githuburl} src={github} label="GitHub" />
+            <Button href={linkedinurl} src={linkedin} label="Linkedin" />
+          </div>
+        </div>
+      </section>
+    </div>
   );
 };
 

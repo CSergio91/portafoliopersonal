@@ -1,20 +1,22 @@
 button{
 display: flex;
 justify-content: center;
-width: 180px;
-height: 50px;
-border: 1px solid wheat;
-border-radius: 10px;
+width: auto;
+height: 3em;
+color: var(--text);
+border-radius: 15px;
 transition: .2s ease-in-out;
-border-style: none;
 background-color: var(--textdark);
+border-style: none;
+filter: sepia(80%);
+padding: 1rem;
+
 }
 
 .button-container button{
     display: flex;
     align-items: center;
-    gap: 20px;
-  
+    gap: 15px;
 }
 
 h4{
@@ -27,6 +29,7 @@ h4{
     scale: 1.1;
     cursor: pointer;
     background-color: var(--background);
+    filter: sepia(0%);
 }
 
 button .img-reut{
